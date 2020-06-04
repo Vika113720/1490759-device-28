@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Девайс</title>
 </head>
-
 <body>
   <header>
     <nav>
       <a><img src="img/-e-logo.png" width="100" height="50" alt="логотип DEVICE"></a>
-      <a href="">поиск</a>
+      <div>
+        <form class="search" method="get" action="https://up.htmlacademy.ru">
+          <label class="search" for="search"></label>
+          <input class="search-input" id="search" type="search" name="search" placeholder="Поиск по сайту">
+        </form>
+      </div>
       <ul>
         <li><a href="">войти</a></li>
         <li><a href="">сравнить</a></li>
@@ -168,6 +171,36 @@
         проверить работоспособность покупки. Всякое бывает.</p>
       <a href=""><img src="img/map1.jpg" alt="карта как доехать"></a>
       <a href=""> напишите нам</a>
+      <div class="map">
+        <!--здесь не уверен-->
+        <a href=""><img src="img/map-big1.png" alt="карта как доехать"></a>
+        <button class="popup-write-us_close" type="button" name="close">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+      </div>
+    </section>
+    <section class="popup-write-us">
+      <h2 class="visually-hidden">Форма для обратной связи</h2>
+      <div>
+        <form class="popup-form" method="post" action="https://up.htmlacademy.ru">
+          <div>
+            <label for="user-name">Ваше имя:</label>
+            <input type="text" id="user-name" name="user-name" placeholder="Имя Фамилия">
+          </div>
+          <div>
+            <label for="user-email">Ваш e-mail:</label>
+            <input type="email" id="user-email" name="user-email" placeholder="email@example.com">
+          </div>
+          <div>
+            <label for="user-message">Текст письма:</label>
+            <textarea id="user-message" name="user-message" placeholder="В свободной форме"></textarea>
+          </div>
+          <button class="button" type="submit">Отправить</button>
+        </form>
+        <button class="popup-write-us_close" type="button" name="close">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+      </div>
     </section>
   </main>
   <footer>
