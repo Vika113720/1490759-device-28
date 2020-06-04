@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Девайс</title>
 </head>
-
 <body>
   <header>
     <nav>
@@ -47,6 +45,53 @@
     <div>
       <p>фильтр:</p>
       <!--здесь будет форма про фильтр-->
+      <form class="filter" method="get" action="https://up.htmlacademy.ru">
+        <div>
+          <fieldset class="filter_item">
+            <legend>Цвет</legend>
+            <ul class="checkbox-list">
+              <li>
+                <label class="filter_checkbox-label" for="filter-check-1">Черный</label>
+                <input class="filter_checkbox" id="filter-check-1" type="checkbox" name="black" checked>
+              </li>
+              <li>
+                <label class="filter_checkbox" for="filter-check-2">Белый</label>
+                <input class="filter_checkbox" id="filter-check-2" type="checkbox" name="white">
+              </li>
+              <li>
+                <label class="filter_checkbox" for="filter-check-3">Синий</label>
+                <input class="filter_checkbox" id="filter-check-3" type="checkbox" name="blue" checked>
+              </li>
+              <li>
+                <label class="filter_checkbox" for="filter-check-4">Красный</label>
+                <input class="filter_checkbox" id="filter-check-4" type="checkbox" name="red" checked>
+              </li>
+              <li>
+                <label class="filter_checkbox" for="filter-check-5">Розовый</label>
+                <input class="filter_" id="filter-check-5" type="checkbox" name="pink">
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+      </form>
+      <div class="filter__item-wrap">
+        <fieldset class="filter__item">
+          <legend>Bluetooth</legend>
+          <ul class="filter__radio-list">
+            <li class="filter__radio-item">
+              <input class="filter__radio-input  visually-hidden" id="filter-control-1" type="radio" name="bluetooth"
+                value="yes" checked="">
+              <label class="filter__radio-label" for="filter-control-1">Есть</label>
+            </li>
+            <li class="filter__radio-item">
+              <input class="filter__radio-input  visually-hidden" id="filter-control-2" type="radio" name="bluetooth"
+                value="no">
+              <label class="filter__radio-label" for="filter-control-2">Нет</label>
+            </li>
+          </ul>
+        </fieldset>
+      </div>
+      <button class="btn" type="submit">Показать</button>
     </div>
     <section>
       <h2 class="visually-hidden">товары селфи-палки</h2>
