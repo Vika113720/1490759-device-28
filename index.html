@@ -11,7 +11,7 @@
     <nav>
       <a><img src="img/-e-logo.png" width="100" height="50" alt="логотип DEVICE"></a>
       <form class="search" method="get" action="https://echo.htmlacademy.ru">
-        <label class="visually-hidden" for="search">поиск по сайту</label>
+        <label for="search" hidden>поиск по сайту</label>
         <input class="search-input" id="search" type="search" name="search" placeholder="Поиск по сайту">
         <button class="search-button" type="submit">Найти</button>
       </form>
@@ -172,12 +172,6 @@
         проверить работоспособность покупки. Всякое бывает.</p>
       <a href=""><img src="img/map1.jpg" alt="карта как доехать"></a>
       <a href=""> напишите нам</a>
-      <div class="map">
-        <!--здесь не уверен-->
-        <a href=""><img src="img/map-big1.png" alt="карта как доехать"></a>
-        <button class="popup-write-us_close" type="button" name="close" aria-label="close">
-        </button>
-      </div>
     </section>
     <section class="popup-write-us">
       <h2 class="visually-hidden">Форма для обратной связи</h2>
@@ -223,6 +217,12 @@
       </a>
     </div>
   </footer>
+  <section class="map">
+    <h2 class="visually-hidden">popup-map</h2>
+    <a href=""><img src="img/map-big1.png" alt="карта как доехать"></a>
+    <button class="popup-write-us_close" type="button" name="close" aria-label="close">
+    </button>
+  </section>
 </body>
 
 </html>
