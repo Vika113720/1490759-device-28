@@ -10,7 +10,11 @@
   <header>
     <nav>
       <a><img src="img/-e-logo.png" width="100" height="50" alt="логотип DEVICE"></a>
-      <a href="">поиск</a>
+      <form class="search" method="get" action="https://echo.htmlacademy.ru">
+        <label for="search" hidden>поиск по сайту</label>
+        <input class="search-input" id="search" type="search" name="search" placeholder="Поиск по сайту">
+        <button class="search-button" type="submit">Найти</button>
+      </form>
       <ul>
         <li><a href="">войти</a></li>
         <li><a href="">сравнить</a></li>
@@ -169,6 +173,20 @@
       <a href=""><img src="img/map1.jpg" alt="карта как доехать"></a>
       <a href=""> напишите нам</a>
     </section>
+    <section class="popup-write-us">
+      <h2 class="visually-hidden">Форма для обратной связи</h2>
+      <form class="popup-form" method="post" action="https://echo.htmlacademy.ru">
+        <label for="user-name">Ваше имя:</label>
+        <input type="text" id="user-name" name="user-name" placeholder="Имя Фамилия">
+        <label for="user-email">Ваш e-mail:</label>
+        <input type="email" id="user-email" name="user-email" placeholder="email@example.com">
+        <label for="user-message">Текст письма:</label>
+        <textarea id="user-message" name="user-message" placeholder="В свободной форме"></textarea>
+        <button class="button" type="submit" name="send">Отправить</button>
+        <button class="popup-write-us_close" type="reset" name="close" aria-label="close">
+        </button>
+      </form>
+    </section>
   </main>
   <footer>
     <div>
@@ -199,6 +217,12 @@
       </a>
     </div>
   </footer>
+  <section class="map">
+    <h2 class="visually-hidden">popup-map</h2>
+    <a href=""><img src="img/map-big1.png" alt="карта как доехать"></a>
+    <button class="popup-write-us_close" type="button" name="close" aria-label="close">
+    </button>
+  </section>
 </body>
 
 </html>
