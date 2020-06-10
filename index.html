@@ -11,7 +11,7 @@
     <nav>
       <a><img src="img/-e-logo.png" width="100" height="50" alt="логотип DEVICE"></a>
       <form class="search" method="get" action="https://echo.htmlacademy.ru">
-        <label for="search" hidden>поиск по сайту</label>
+        <label class="visually-hidden" for="search" hidden>поиск по сайту</label>
         <input class="search-input" id="search" type="search" name="search" placeholder="Поиск по сайту">
         <button class="search-button" type="submit">Найти</button>
       </form>
@@ -46,6 +46,7 @@
           <!--Здесь будет декоративная цифра 01-->
           <p>Самая длинная палка для селфи доступна в нашем магазине.<br>
             Восемь (восемь, Карл!) метров длиной и весом 5 килограмм.</p>
+          <a href="">подробнее</a>
           <table>
             <tr>
               <td>8,5м</td>
@@ -64,6 +65,7 @@
           <!--Здесь будет декоративная цифра 02-->
           <p>Мотивирующие фитнес-браслеты помогут найти в себе силы<br>
             не пропускать занятия и соблюдать диету.</p>
+          <a href="">подробнее</a>
           <table>
             <tr>
               <td>48часов</td>
@@ -78,6 +80,7 @@
           <!--Здесь будет декоративная цифра 03-->
           <p>Этот обычный, на первый взгляд, квадрокоптер оснащен<br>
             мощным лазером, замаскированным под стандартную камеру.</p>
+          <a href="">подробнее</a>
           <table>
             <tr>
               <td>800м</td>
@@ -91,8 +94,12 @@
         </li>
       </ul>
       <div>
-        <a href="">подробнее</a>
-        <!--здесь будут радиоиконки-->
+        <input type="radio" name="radio-button" id="radio-button1">
+        <label for="radio-button1" hidden>первый слайд</label>
+        <input type="radio" name="radio-button" id="radio-button2">
+        <label for="radio-button2" hidden>второй слайд</label>
+        <input type="radio" name="radio-button" id="radio-button3">
+        <label for="radio-button3" hidden>третий слайд</label>
       </div>
     </section>
     <section>
@@ -183,7 +190,7 @@
         <label for="user-message">Текст письма:</label>
         <textarea id="user-message" name="user-message" placeholder="В свободной форме"></textarea>
         <button class="button" type="submit" name="send">Отправить</button>
-        <button class="popup-write-us_close" type="reset" name="close" aria-label="close">
+        <button class="popup-write-us_close" type="reset" name="close" aria-label="закрыть">
         </button>
       </form>
     </section>
@@ -218,9 +225,9 @@
     </div>
   </footer>
   <section class="map">
-    <h2 class="visually-hidden">popup-map</h2>
+    <h2 class="visually-hidden">большая карта</h2>
     <a href=""><img src="img/map-big1.png" alt="карта как доехать"></a>
-    <button class="popup-write-us_close" type="button" name="close" aria-label="close">
+    <button class="popup-write-us_close" type="button" name="close" aria-label="закрыть">
     </button>
   </section>
 </body>
