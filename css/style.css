@@ -20,7 +20,8 @@ body {
   min-width: 1200px;
   margin: 0;
   padding: 0;
-  font-family: 'PT Sans Narrow', sans-serif;
+  font-weight: 300;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 15px;
   line-height: 20px;
   font-weight: 300;
@@ -63,7 +64,6 @@ a {
 }
 
 .user__list-navigation a {
-  font-family: "Open Sans";
   font-style: normal;
   color: var(--basic-black);
 }
@@ -99,10 +99,8 @@ a {
 .slider__text {
   margin: 0;
   padding: 0;
-  font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
   letter-spacing: .01em;
-  color: #000000;
 }
 
 .btn {
@@ -147,7 +145,6 @@ a {
 }
 
 .text__section-info {
-  font-family: "Open Sans";
   font-style: normal;
   line-height: 28px;
   color: #000000;
@@ -163,7 +160,6 @@ a {
 }
 
 .content__list {
-  font-family: "Open Sans";
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
@@ -183,13 +179,11 @@ a {
 }
 
 .comparison {
-  font-family: "Open Sans";
   font-style: normal;
   font-weight: 300;
   font-size: 13px;
   line-height: 18px;
   letter-spacing: 0.1em;
-  color: #000000;
   opacity: 0.5;
 }
 
@@ -200,7 +194,6 @@ a {
   font-size: 16px;
   line-height: 18px;
   letter-spacing: 0.05em;
-  color: #000000;
 }
 
 .page_footer {
@@ -216,7 +209,6 @@ a {
 }
 
 .footer-address {
-  font-family: Open Sans;
   font-style: normal;
   color: var(--basic-white);
 }
@@ -233,16 +225,11 @@ a {
 }
 
 .tel {
-  font-family: "Open Sans";
   font-style: normal;
-  font-weight: 300;
-  font-size: 15px;
-  line-height: 20px;
   color: #FFFFFF;
 }
 
 .user__list-footer a {
-  font-family: "Open Sans";
   font-style: normal;
   color: rgba(255, 255, 255, 0.7);
 }
