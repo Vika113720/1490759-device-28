@@ -10,26 +10,30 @@
   --special-yellow: #F7E296;
 }
 
-
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
 body {
-  min-width: 1460px;
+  min-width: 1200px;
   margin: 0;
   padding: 0;
-  font-family: "Open Sans", "Arial", sans-serif;
+  font-family: 'PT Sans Narrow', sans-serif;
   font-size: 15px;
   line-height: 20px;
   font-weight: 300;
-  color: var(--basic-black);
-  background-color: var(--basic-white);
 }
 
+
 img {
-  max-width: 100%
+  max-width: 100%;
+  height: auto;
 }
 
 a {
-  text-decoration: none
+  text-decoration: none;
 }
 
 .main-navigation {
@@ -37,14 +41,12 @@ a {
   line-height: 22px;
   color: var(--basic-black);
   background-color: var(--special-yellow);
-
 }
 
 .user__list-navigation,
 .nav__list-navigation li {
   list-style: none;
 }
-
 
 .main-navigation a:hover,
 .main-navigation a:focus {
@@ -56,20 +58,13 @@ a {
   height: 20px;
   left: 98px;
   top: 64px;
-  font-family: "Open Sans";
   font-style: normal;
-  font-weight: 300;
-  font-size: 15px;
-  line-height: 20px;
   color: rgba(0, 0, 0, 0.3);
 }
 
 .user__list-navigation a {
   font-family: "Open Sans";
   font-style: normal;
-  font-weight: 300;
-  font-size: 15px;
-  line-height: 20px;
   color: var(--basic-black);
 }
 
@@ -87,11 +82,6 @@ a {
 .list-navigation_column a {
   font-family: "Open Sans";
   font-style: normal;
-  font-weight: 300;
-  font-size: 15px;
-  line-height: 20px;
-
-  color: var(--basic-black);
 }
 
 .slider__page {
@@ -109,9 +99,6 @@ a {
 .slider__text {
   margin: 0;
   padding: 0;
-  font-weight: 300;
-  font-size: 15px;
-  line-height: 20px;
   font-family: "Open Sans", "Arial", sans-serif;
   font-style: normal;
   letter-spacing: .01em;
@@ -140,7 +127,7 @@ a {
 }
 
 .table-slider__1 .table-parameters {
-  font-family: Gilroy;
+  font-family: "Gilroy";
   font-style: normal;
   font-weight: 300;
   font-size: 13px;
@@ -150,7 +137,7 @@ a {
 }
 
 .title__section-info {
-  font-family: Gilroy;
+  font-family: "Gilroy";
   font-style: normal;
   font-weight: 800;
   font-size: 47px;
@@ -160,10 +147,8 @@ a {
 }
 
 .text__section-info {
-  font-family: Open Sans;
+  font-family: "Open Sans";
   font-style: normal;
-  font-weight: 300;
-  font-size: 15px;
   line-height: 28px;
   color: #000000;
 }
@@ -175,11 +160,10 @@ a {
   font-size: 47px;
   line-height: 58px;
   color: #000000;
-
 }
 
 .content__list {
-  font-family: Open Sans;
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
@@ -189,7 +173,7 @@ a {
 }
 
 .titel__goods-item {
-  font-family: Gilroy;
+  font-family: "Gilroy";
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
@@ -199,7 +183,7 @@ a {
 }
 
 .comparison {
-  font-family: Open Sans;
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: 300;
   font-size: 13px;
@@ -210,7 +194,7 @@ a {
 }
 
 .price {
-  font-family: Gilroy;
+  font-family: "Gilroy";
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
@@ -218,12 +202,6 @@ a {
   letter-spacing: 0.05em;
   color: #000000;
 }
-
-
-
-
-
-
 
 .page_footer {
   width: 1440px;
@@ -240,9 +218,6 @@ a {
 .footer-address {
   font-family: Open Sans;
   font-style: normal;
-  font-weight: 300;
-  font-size: 15px;
-  line-height: 20px;
   color: var(--basic-white);
 }
 
@@ -257,17 +232,8 @@ a {
   color: #ffffff;
 }
 
-.user__list-footer a {
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 15px;
-  line-height: 20px;
-  color: rgba(255, 255, 255, 0.7);
-}
-
 .tel {
-  font-family: Open Sans;
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: 300;
   font-size: 15px;
@@ -275,10 +241,8 @@ a {
   color: #FFFFFF;
 }
 
-
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+.user__list-footer a {
+  font-family: "Open Sans";
+  font-style: normal;
+  color: rgba(255, 255, 255, 0.7);
 }
