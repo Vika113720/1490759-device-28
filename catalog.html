@@ -12,7 +12,7 @@
 <body>
   <header class="page__header">
     <nav class="main-navigation">
-      <a href="index.html" class="page-logo"><img src="img/-e-logo.png" width="163" height="35"
+      <a href="index.html" class="page-logo"><img src="img/logo-device.svg" width="163" height="35"
           alt="логотип DEVICE"></a>
       <form class="search" method="get" action="https://echo.htmlacademy.ru">
         <label class="visually-hidden" for="search" hidden>поиск по сайту</label>
@@ -52,12 +52,12 @@
         </ul>
       </nav>
     </section>
-    <section>
+    <section class="section-filter">
       <h4>фильтр:</h4>
       <form class="filter" method="get" action="https://echo.htmlacademy.ru">
         <input type="range" id="price" name="price" min="0" max="5000" step="1">
         <label for="price">Стоимость</label>
-        <fieldset class="filter_item">
+        <fieldset class="filter__item">
           <legend>Цвет</legend>
           <ul class="checkbox-list">
             <li>
@@ -66,19 +66,19 @@
             </li>
             <li>
               <input class="filter_checkbox" id="filter-check-2" type="checkbox" name="white">
-              <label class="filter_checkbox" for="filter-check-2">Белый</label>
+              <label class="filter_checkbox-label" for="filter-check-2">Белый</label>
             </li>
             <li>
               <input class="filter_checkbox" id="filter-check-3" type="checkbox" name="blue" checked>
-              <label class="filter_checkbox" for="filter-check-3">Синий</label>
+              <label class="filter_checkbox-label" for="filter-check-3">Синий</label>
             </li>
             <li>
               <input class="filter_checkbox" id="filter-check-4" type="checkbox" name="red" checked>
-              <label class="filter_checkbox" for="filter-check-4">Красный</label>
+              <label class="filter_checkbox-label" for="filter-check-4">Красный</label>
             </li>
             <li>
               <input class="filter_checkbox" id="filter-check-5" type="checkbox" name="pink">
-              <label class="filter_checkbox" for="filter-check-5">Розовый</label>
+              <label class="filter_checkbox-label" for="filter-check-5">Розовый</label>
             </li>
           </ul>
         </fieldset>
@@ -102,9 +102,9 @@
     </section>
     <section class="goods-section">
       <h2 class="visually-hidden">товары селфи-палки</h2>
-      <section>
+      <section class="sort-section">
         <h4>Сортировка:</h4>
-        <ul>
+        <ul class="sort-list">
           <li><a href="#">по цене</a></li>
           <li><a href="#">по типу</a></li>
           <li><a href="#">по популярности</a></li>
@@ -148,15 +148,13 @@
           </div>
         </li>
       </ul>
-      <div>
-        <ul>
+        <ul class="pagination-list">
           <li><a href="#">назад</a></li>
           <li><a href="#">1</a></li>
           <li><a href="#">2</a></li>
           <li><a href="#">3</a></li>
           <li><a href="#">вперёд</a></li>
         </ul>
-      </div>
     </section>
   </main>
   <footer class="page_footer">
